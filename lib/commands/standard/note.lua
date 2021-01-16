@@ -4,7 +4,7 @@
 commands:register{
   invocations = {},
   signature = function(branch, invocations)
-    if #branch ~= 3 then return faslse end
+    if #branch ~= 3 then return false end
     return (
       fn.is_int(branch[1].leaves[1])
       and fn.is_int(branch[2].leaves[1])
